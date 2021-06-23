@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	background-color: #A06D21;
+	background-image: url("D:/Practice/Source/vltt.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: tahoma;
+}
+
+h1 {
+	margin-top: 20px;
+	text-align: center;
+	color: #FFCC00;
+}
+
+p {
+	color: white;
+	text-align: justify;
+	margin: 150px 200px;
+}
