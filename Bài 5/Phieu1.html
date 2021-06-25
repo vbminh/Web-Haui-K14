@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inintial-scale=1.0">
+<title>Phieu 1</title>
+</head>
+<body>
+	Ngày tháng năm sinh:<br>
+	ngày
+	<select id="day" name="day"></select>
+	tháng
+	<select id="month" name="month"></select>
+	năm
+	<select id="year" name="year"></select>
+	
+	<script type="text/javascript">
+		var selectDay = document.getElementById("day");
+		var selectMonth = document.getElementById("month");
+		var selectYear = document.getElementById("year");
+		
+		for(var i = 1; i <= 31; i++) {
+			var option = document.createElement("option");
+			option.value = i;
+			option.textContent = i;
+			selectDay.appendChild(option);
+		}
+		
+		for(var i = 1; i <= 12; i++) {
+			var option = document.createElement("option");
+			option.value = i;
+			option.textContent = i;
+			selectMonth.appendChild(option);
+		}
+		
+		for(var i = 2021; i >= 1900; i--) {
+			var option = document.createElement("option");
+			option.value = i;
+			option.textContent = i;
+			selectYear.appendChild(option);
+		}
+	</script>
+	<br><br><hr><br><br>
+	<input type="button" onclick="sayHello()" value="Click here">
+	<script type="text/javascript">
+		function sayHello() {
+			alert("Hello!!! I'm Minh (^.^)")
+		}
+	</script>
+	<br><br><hr><br><br>
+	Giải phương trình bậc hai với a = 4, b = 6, c = 2<br><br>
+	Nhấn để xem kết quả<br><br>
+	<input type="button" onclick="PTB2()" value="Kết quả">
+	
+	<script type="text/javascript">
+		function PTB2() {
+			var a = 4;
+			var b = 6; 
+			var c = 2;
+			var x1, x2;
+			var del = b * b - 4 * a * c;
+			
+			x1 = (-b + Math.sqrt(del))/(2 * a);
+			x2 = (-b - Math.sqrt(del))/(2 * a);
+			
+			document.writeln("Phương trình có 2 nghiệm phân biệt");
+			document.writeln("<br>x1 = " + x1);
+			document.write("<br>x2 = " + x2);
+			
+		}
+	</script>
+	
+	<br><br><hr><br><br>
+	<input type="button" onclick="bam(1)" value="1">
+	<input type="button" onclick="bam(2)" value="2">
+	<input type="button" onclick="bam(3)" value="3">
+	<input type="button" onclick="bam(4)" value="4">
+	<input type="button" onclick="bam(5)" value="5">
+	<input type="button" onclick="plus()" value="+">
+	<br>
+	<input type="button" onclick="bam(6)" value="6">
+	<input type="button" onclick="bam(7)" value="7">
+	<input type="button" onclick="bam(8)" value="8">
+	<input type="button" onclick="bam(9)" value="9">
+	<input type="button" onclick="bam(0)" value="0">
+	<input type="button" onclick="kq()" value="=">
+	<br>
+	Kết quả là: &emsp;
+	<span style="color: red;" id = "result"></span>
+	
+	<script type="text/javascript">
+		var sum = 0;
+		var a = 0;
+		
+		function bam(x) {
+			a = x;
+		}
+		
+		function kq() {
+			var kq = document.getElementById("result");
+			kq.textContent = sum + a;
+			sum = 0;
+			a = 0;
+		}
+		
+		function plus() {
+			sum  += a;
+		}
+	</script>
+</body>
+</html>
