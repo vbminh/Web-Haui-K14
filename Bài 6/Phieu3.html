@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phiếu 3</title>
+<script src="bai6.js"></script>
+<link rel="stylesheet" href="bai6.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><b>Phương trình bậc nhất hai ẩn</b></td>
+		</tr>
+		<tr>
+			<td>Nhập a1</td>
+			<td><input type="text" id="a1"></td>
+		</tr>
+		<tr>
+			<td>Nhập b1</td>
+			<td><input type="text" id="b1"></td>
+		</tr>
+		<tr>
+			<td>Nhập c1</td>
+			<td><input type="text" id="c1"></td>
+		</tr>
+		<tr>
+			<td>Nhập a2</td>
+			<td><input type="text" id="a2"></td>
+		</tr>
+		<tr>
+			<td>Nhập b2</td>
+			<td><input type="text" id="b2"></td>
+		</tr>
+		<tr>
+			<td>Nhập c2</td>
+			<td><input type="text" id="c2"></td>
+		</tr>
+		<tr>
+			<td style="float: right;"><input type="reset" value="Xóa"></td>
+			<td><input type="submit" onclick="PTB1()" value="Giải"></td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="2" id="Gptb1">Kết quả</td>
+		</tr>
+	</table>
+	<br><br><hr><br><br>
+	<table style="width: 500px;">
+		<tr>
+			<td rowspan="1" colspan="2"><h2>JavaScript có thể kiểm soát form</h2></td>
+		</tr>
+		<tr>
+			<td colspan="2">Hãy nhập số vào hộp text(từ 0 đến 10):</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="number"></td>
+			<td style="float: left;"><input type="submit" onclick="check()" value="Submit"></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="check"></td>
+		</tr>
+	</table>
+</body>
+</html>

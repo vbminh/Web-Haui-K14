@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phieu 2</title>
+<script type="text/javascript" src="bai6.js"></script>
+<link rel="stylesheet" href="bai6.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><b>Phương trình bậc hai</b></td>
+		</tr>
+		<tr>
+			<td>Nhập a</td>
+			<td><input type="text" id="a"></td>
+		</tr>
+		<tr>
+			<td>Nhập b</td>
+			<td><input type="text" id="b"></td>
+		</tr>
+		<tr>
+			<td>Nhập c</td>
+			<td><input type="text" id="c"></td>
+		</tr>
+		<tr>
+			<td style="float: right;"><input type="reset" value="Xóa"></td>
+			<td><input type="submit" onclick="PTB2()" value="Tính"></td>
+		</tr>
+		<tr>
+			<td rowspan="2" colspan="2" id="kq">Kết quả</td>
+		</tr>
+	</table>
+	<br><br><hr><br><br>
+	<input type="button" onclick="bam(1)" value="1">
+	<input type="button" onclick="bam(2)" value="2">
+	<input type="button" onclick="bam(3)" value="3">
+	<input type="button" onclick="bam(4)" value="4">
+	<input type="button" onclick="bam(5)" value="5">
+	<input type="button" onclick="tru()" value="-">
+	<br>
+	<input type="button" onclick="bam(6)" value="6">
+	<input type="button" onclick="bam(7)" value="7">
+	<input type="button" onclick="bam(8)" value="8">
+	<input type="button" onclick="bam(9)" value="9">
+	<input type="button" onclick="bam(0)" value="0">
+	<input type="button" onclick="kqt()" value="=">
+	<br>
+	<p>Kết quả: <span style="color: red;" id="kqt"></span></p>
+</body>
+</html>

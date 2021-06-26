@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phiếu 1</title>
+<script src="bai6.js"></script>
+<link rel="stylesheet" href="bai6.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><b>Chương trình tra tuổi</b></td>
+		</tr>
+		<tr>
+			<td>Tuổi dương</td>
+			<td><input type="text" id="duong"></td>
+		</tr>
+		<tr>
+			<td>Tuổi âm</td>
+			<td><p id="am">Kết quả</p></td>
+		</tr>
+		<tr>
+			<td style="float: right;"><input type="reset" value="Xóa"></td>
+			<td><input type="submit" onclick="result()" value="Tra cứu"></td>
+	</table>
+	<br><br><hr><br><br>
+	<input type="button" onclick="bam(1)" value="1">
+	<input type="button" onclick="bam(2)" value="2">
+	<input type="button" onclick="bam(3)" value="3">
+	<input type="button" onclick="bam(4)" value="4">
+	<input type="button" onclick="bam(5)" value="5">
+	<input type="button" onclick="plus()" value="+">
+	<br>
+	<input type="button" onclick="bam(6)" value="6">
+	<input type="button" onclick="bam(7)" value="7">
+	<input type="button" onclick="bam(8)" value="8">
+	<input type="button" onclick="bam(9)" value="9">
+	<input type="button" onclick="bam(0)" value="0">
+	<input type="button" onclick="kq()" value="=">
+	<br>
+	<p>Kết quả: <span style="color: red;" id="kq"></span></p>
+</body>
+</html>
