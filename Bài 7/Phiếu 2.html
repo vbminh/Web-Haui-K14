@@ -1,0 +1,49 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phiếu 2</title>
+<link rel="stylesheet" href="Phieu2.css">
+</head>
+<body>
+	<form action="" name="calculation">
+		<h2>Máy tính đơn giản</h2>
+		<table>
+			<tr>
+				<td colspan="4"><input type="text" name="display" disabled="disabled" style="width: 180px;"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="calculation.display.value += 1" value="1"></td>
+				<td><input type="button" onclick="calculation.display.value += 2" value="2"></td>
+				<td><input type="button" onclick="calculation.display.value += 3" value="3"></td>
+				<td><input type="button" onclick="calculation.display.value += '+'" value="+"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="calculation.display.value += 4" value="4"></td>
+				<td><input type="button" onclick="calculation.display.value += 5" value="5"></td>
+				<td><input type="button" onclick="calculation.display.value += 6" value="6"></td>
+				<td><input type="button" onclick="calculation.display.value += '-'" value="-"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="calculation.display.value += 7" value="7"></td>
+				<td><input type="button" onclick="calculation.display.value += 8" value="8"></td>
+				<td><input type="button" onclick="calculation.display.value += 9" value="9"></td>
+				<td><input type="button" onclick="calculation.display.value += '*'" value="x"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="calculation.display.value = ''" value="C"></td>
+				<td><input type="button" onclick="calculation.display.value += 0" value="0"></td>
+				<td><input type="button" onclick="calculation.display.value = eval(calculation.display.value)" value="="></td>
+				<td><input type="button" onclick="calculation.display.value += '/'" value="/"></td>
+			</tr>
+		</table>
+	</form>
+	<br><br><hr><br><br>
+	<form>
+		<img src="red.PNG" width="100px" height="100px" onmousemove="body.style.background = 'red'">
+		<img src="blue.PNG" width="100px" height="100px" onmousemove="body.style.background = 'blue'">
+		<img src="green.PNG" width="100px" height="100px" onmousemove="body.style.background = 'green'">
+	</form>
+</body>
+</html>

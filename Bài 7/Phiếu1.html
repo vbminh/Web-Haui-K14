@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phiếu 1</title>
+<script src="Bai7.js"></script>
+<style type="text/css">
+	div {
+		display: flex;
+	}
+	
+	div #img1 {
+		position: absolute;
+	}
+	
+	div #img2 {
+		position: absolute;
+		z-index: -1;
+	}
+</style>
+</head>
+<body>
+	<input type="text" id="box" onfocus="Focus(this)" onchange="Change()">
+	<br><br><hr><br><br>
+	<p id="bgr" onclick="Changecolor()">Chào mừng bạn đến với website</p>
+	<br><br><hr><br><br>
+	<div onclick="OnOff()">
+		<img src="pic_bulboff.gif" id="img1">
+		<img src="pic_bulbon.gif" id="img2">
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><hr><br><br>
+	<form action="">
+		<table>
+			<tr>
+				<td>Số thứ nhất:</td>
+				<td><input type="text" id="s1"></td>
+			</tr>
+			<tr>
+				<td>Số thứ hai:</td>
+				<td><input type="text" id="s2"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" onclick="cong()" value="+">
+					<input type="button" onclick="tru()" value="-">
+					<input type="button" onclick="nhan()" value="*">
+					<input type="button" onclick="chia()" value="/">
+					<input type="button" onclick="mu()" value="^">
+					<input type="button" onclick="C()" value="C">
+				</td>
+			</tr>
+			<tr>
+				<td>Kết quả:</td>
+				<td><input type="text" id="kq"></td>
+		</table>
+	</form>
+</body>
+</html>

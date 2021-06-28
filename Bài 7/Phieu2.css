@@ -1,0 +1,26 @@
+@charset "UTF-8";
+h2 {
+	text-align: center;
+}
+table {
+	width: 200px;
+	height: 200px;
+	background-color: #c0c0c0;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px
+}
+
+td {
+	margin-right: 5px;
+}
+
+input {
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+}
+
+input:hover {
+	background-color: gray;
+}
