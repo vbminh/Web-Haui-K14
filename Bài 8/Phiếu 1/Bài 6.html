@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 6</title>
+</head>
+<body>
+	Bài 6: Kiểm tra chuỗi có bắt đầu bằng "Java" không<br>
+	st1 = "Java thật vi diệu"
+	<p id="bai6a"></p>
+	st2 = "học Java thật vi diệu"
+	<p id="bai6b"></p>
+	
+	<script type="text/javascript">
+	var st1 = "Java thật vi diệu"
+	var st2 = "học Java thật vi diệu"
+	var test = "Java";
+	
+	st1 = st1.trim();
+	st2 = st2.trim();
+	
+	var arr1 = st1.split(" ");
+	var arr2 = st2.split(" ");
+	
+	if(test == arr1[0])
+		text1 = "Chuỗi bắt đầu bằng Java"
+	else
+		text1 = "Chuỗi không bắt đầu bằng Java"
+	document.getElementById("bai6a").textContent = "Kết quả: " + text1;
+	
+	if(test == arr2[0])
+		text2 = "Chuỗi bắt đầu bằng Java"
+	else
+		text2 = "Chuỗi không bắt đầu bằng Java"
+	document.getElementById("bai6b").textContent = "Kết quả: " + text2;
+	
+	</script>
+</body>
+</html>

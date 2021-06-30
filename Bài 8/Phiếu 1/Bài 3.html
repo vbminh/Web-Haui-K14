@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 3</title>
+</head>
+<body>
+	Bài 3: Tìm phần tử trùng lặp trongarr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3];<br>
+	<p id="bai3"></p>
+	
+	<script type="text/javascript">
+	var arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3];
+	var n = arr.length;
+	
+	function count(a,n,x) {
+		var tmp = 0;
+		for(var i = 0; i < n; i++)
+			if(a[i] == x)
+				tmp++;
+		return tmp;
+	}
+	
+	function Output(a,n) {
+		 var text = "";
+         var tmp1, tmp = count(a, n, a[0]), index = 0;
+         for(var i = 1; i < n; i++){
+             tmp1 = count(a, n, a[i]);
+             if(tmp1 > tmp){
+                 index = i;
+                 tmp = tmp1;
+             }
+         }
+ 		
+ 		a.sort();
+        
+        for(var i = n; i >= 0; i--){
+            if(count(a, n, a[i]) > 1 && a[i] != a[i - 1]){
+                text +=" " + a[i] + "(" + count(a,n,a[i]) + " times)";  
+            }
+        }
+        return text;
+ 	}
+	document.getElementById("bai3").innerHTML = "Kết quả: " + Output(arr,n);
+	</script>
+</body>
+</html>

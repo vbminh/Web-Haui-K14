@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 2</title>
+</head>
+<body>
+	Bài 2: Giá trị trong arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3] xuất hiện nhiều lần nhất<br>
+	<p id="bai2"></p>
+	
+	<script type="text/javascript">
+ 	var arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3];
+ 	var n = arr.length;
+ 	
+ 	function Count(a,n,x) {
+ 		var tmp = 0;
+ 		for(var i = 0; i < n; i++)
+ 			if(a[i] == x)
+ 				tmp++;
+ 		return tmp;
+ 	}
+ 	
+ 	function Output(a,n) {
+ 		var y, index = 0;
+ 		var tmp = Count(a,n,a[0]);
+ 		for(var i = 1; i < n; i++) {
+ 			y = Count(a,n,a[i]);
+ 			if(y > tmp) {
+ 				tmp = y;
+ 				index = i;
+ 			}
+ 		}
+ 		return a[index] + "(" + Count(a,n,a[index]) + " times)";
+ 	}
+ 	
+ 	document.getElementById("bai2").innerHTML = "Kết quả: " + Output(arr,n);
+	</script>	
+</body>
+</html>

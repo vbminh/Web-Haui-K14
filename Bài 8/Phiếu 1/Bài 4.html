@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 4</title>
+</head>
+<body>
+	Bài 4: Đảo ngược chuỗi "HelloWorld"<br>
+	<p id="bai4"></p>
+	
+	<script type="text/javascript">
+	
+	function Dao(str) {
+		var tmp = str.split("");
+		
+		var dao = tmp.reverse();
+		
+		var join = dao.join("");
+		
+		return join;
+	}
+	document.getElementById("bai4").textContent = "Kết quả: " + Dao("HelloWorld");
+	</script>
+</body>
+</html>
