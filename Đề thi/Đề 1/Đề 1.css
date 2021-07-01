@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+banner {
+	width: 100%;
+	height: 300px;
+}
+
+sidebar {
+	width: 250px;
+	height: 200px;
+	background-color: #f4f4f7;
+	float: right;
+	border: solid black 1px;
+	margin: 10px;
+}
+
+h2 {
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #d5760d;
+	color: white;
+	font-style:italic;
+	text-align: center;
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+	margin-left: 15%;
+}
+
+#menu > li {
+	margin-top: 10px;
+	width: 150px;
+	height: 50px;
+	line-height:50px;
+	background-color: #ff8040;
+	display: inline-block;
+}
+
+#menu > li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#menu > li:hover {
+	background: #ff8080;
+}
+
+#menu > li a:hover {
+	color: red;
+}
+
+#menu-left {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	margin: 10px;
+}
+
+#menu-left > li {
+	position: relative;
+	width: 200px;
+	height: 40px;
+	line-height:40px;
+	background-color: #66FFCC;
+	display: inline-block;
+}
+
+
+#menu-left > li a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#menu-left > li:hover {
+	background: #FFCCCC;
+}
+
+#menu-left > li a:hover {
+	color: white;
+}
+
+#sub-menu {
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	left: 100%;
+	top: 0;
+}
+
+#sub-menu > li {
+	width: 200px;
+	height: 40px;
+	line-height:40px;
+	background-color: #d3d3d3;
+	display: block;
+	
+}
+
+#sub-menu > li a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	width: 100%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#sub-menu > li:hover {
+	background-color: #b3b3ff;
+}
+
+#sub-menu > li a:hover {
+	color: white;
+}
+
+li:hover #sub-menu{
+	display: flex;
+	flex-direction: column;
+}
+
+article {
+	margin: 20px 250px;
+}
+
+img {
+	padding-right: 50px;
+}
+
+h3 {
+	width: 200px;
+	text-align: center;
+	padding-right: 50px;
+	float: left;
+}
+
+span {
+	color: red;
+}
+
+p {
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+}
