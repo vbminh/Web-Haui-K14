@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 2</title>
+</head>
+<body>
+	Bài 2: Color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "]; <br>
+		   Name = ["th","st","nd","rd"] <br>
+		   Kết quả: <p id="bai2"></p>
+	 
+	 <script type="text/javascript">
+	 	var Color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+		var Name = ["th","st","nd","rd"];
+	 	var text = "";
+	 	
+	 	for(var i = 0; i < Color.length; i++) {
+	 		if(i > 2)
+	 			text += "\"" + (i + 1) + Name[0] + " choice is " + Color[i] + ".\"<br>";
+	 		else
+	 			text += "\"" + (i + 1) + Name[i + 1] + " choice is " + Color[i] + ".\"<br>";
+	 	}
+	 	
+	 	document.getElementById("bai2").textContent= text;
+	 </script>
+</body>
+</html>

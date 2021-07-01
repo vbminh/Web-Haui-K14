@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 3</title>
+</head>
+<body>
+	Bài 3: Chuyển đổi các chữ hoa trong chuỗi "I love You" thành chữ thường và ngược lại<br>
+	<p id="bai3"></p>
+	 
+	 <script type="text/javascript">
+	 	var st = "I love You"
+	 	var text = "";
+	 	
+	 	for(var i = 0; i < st.length; i++) {
+	 		if(st[i] >= 'A' && st[i] <= 'Z')
+	 			text += st[i].toLowerCase();
+	 		else
+	 			text += st[i].toUpperCase();
+	 	}
+	 	
+	 	document.getElementById("bai3").textContent= "Kết quả: " + text;
+	 </script>
+</body>
+</html>

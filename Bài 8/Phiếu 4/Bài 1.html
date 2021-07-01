@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 1</title>
+</head>
+<body>
+	Bài 1: Tìm số lặp nhiều nhất trong một dãy số nguyên.<br>
+		   VD: arr = [1,2,3,4,1,2,2,1]<br>
+		   <p id="bai1"></p>
+	 
+	 <script type="text/javascript">
+	 	var arr = [1,2,3,4,1,2,2,1];
+	 	var n = arr.length;
+	 	
+	 	function Count(a,n,x) {
+	 		var tmp = 0;
+	 		for(var i = 0; i < n; i++)
+	 			if(x == a[i])
+	 				tmp++;
+	 		return tmp;
+	 	}
+	 	
+	 	function check(a,n) {
+	 		var tmp = Count(a,n,a[0]);
+	 		var tmp1, index = 0;
+	 		
+	 		for(var i = 0; i < n; i++)
+	 			tmp1 = Count(a,n,a[i]);
+	 			if(tmp1 > tmp) {
+	 				tmp = tmp1;
+	 				index = i;
+	 			}
+	 		return a[index] + " (" + Count(a,n,a[index]) + "lần)";
+	 	}
+	 	document.getElementById("bai1").textContent= "Kết quả: " + check(arr,n);
+	 </script>
+</body>
+</html>

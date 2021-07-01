@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 2</title>
+</head>
+<body>
+	Bài 2: Kiểm tra chuỗi: <br>
+		   str1 = "abcd";<br>
+		   str2 = "cbda"; <br>
+		   <p id="bai2"></p>
+	 
+	 <script type="text/javascript">
+	 	var str1 = "abcd";
+	 	var str2 = "cbda";
+	 	var check = true;
+	 	
+	 	var arr1 = str1.split(/(?!$)/u);
+	 	var arr2 = str2.split(/(?!$)/u);
+	 	
+	 	arr1.sort();
+	 	arr2.sort();
+	 	
+	 	for(var i = 0; i < arr1.length; i++)
+	 		if(arr1[i] != arr2[i]) {
+	 			check = false;
+	 			break;
+	 		}	 	
+	 	document.getElementById("bai2").textContent= "Kết quả: " + check;
+	 </script>
+</body>
+</html>

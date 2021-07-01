@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 1</title>
+</head>
+<body>
+	Kiểm tra số lương kí tự 'h' và a' của chuỗi "học Java thật vi diệu"<br>
+	<p id="bai1"></p>
+	 
+	 <script type="text/javascript">
+	 	var st = "học Java thật vi diệu"
+	 	st = st.trim();
+	 	var arr = st.split(/(?!$)/u);
+	 	var n = arr.length;
+	 	
+	 	function Count(a,n,x) {
+	 		var tmp = 0;
+	 		for(var i = 0; i < n; i++)
+	 			if(x == a[i])
+	 				tmp++
+	 		return tmp;
+	 	}
+	 	
+	 	var tmp1 = Count(arr,n,"h");
+	 	var tmp2 = Count(arr,n,"a");
+	 	
+	 	if(tmp1 == tmp2)
+	 		text = "h xuất hiện " + tmp1 + " lần, a xuất hiện " + tmp2 + " lần, vậy số lượng bằng nhau";
+	 	else
+	 		text = "h xuất hiện " + tmp1 + " lần, a xuất hiện " + tmp2 + " lần, vậy số lượng không bằng nhau";
+	 	document.getElementById("bai1").textContent= "Kết quả: " + text;
+	 </script>
+</body>
+</html>

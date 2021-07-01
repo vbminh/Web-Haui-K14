@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 1</title>
+</head>
+<body>
+<form action="">
+	Bài 2: <br>Nhập số: <input type="text" id="mahoa" placeholder="Nhập số từ 0 đến 25"><br><br>
+	<input type="button" onclick="Giaima()" value="Giải mã"><br>
+	Kết quả: <p id="result"></p>
+</form>
+	 
+	 <script type="text/javascript">
+	 var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25];
+     var char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+     var arr0 = [];
+     var index = 0, sum = 0;
+     
+	 var x = document.getElementById("mahoa").value;
+	 if(x >= 0 && x <= 25)
+	 	x = parseInt(x);
+	 else
+		 alert("Nhập số trong [0,25]");
+	 
+	 var str = "ha trang;"
+	 str.trim();
+	 var arr = str.split(/(?!$)/u);
+	 var n = arr.length;
+	 
+	 function Giaima() {
+		 for(var i = 0; i < n; i++)
+			 for(var j = 0; j < char.length; j++)
+				 if(arr[i] == char[j]) {
+					 sum = x + j;
+				 	 index = parseInt((sum % 26));
+				 	 arr0[i] = char[index];
+				 }
+		 var a = arr0.join('');
+		 document.getElementById("result").innerHTML = a;
+	 }
+	 </script>
+
+</body>
+</html>

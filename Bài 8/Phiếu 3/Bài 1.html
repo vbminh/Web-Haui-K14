@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meate name="viewport" content="widrh=device-width, initial-scale=1.0">
+<title>Bài 1</title>
+</head>
+<body>
+	Bài 1: Tính tổng hai mảng: <br>
+		   arr1 = [1,0,2,3,4];<br>
+		   arr2 = [3,5,6,7,8,13]; <br>
+		   Kết quả: <p id="bai1"></p>
+	 
+	 <script type="text/javascript">
+	 	var arr1 = [1,0,2,3,4];
+	 	var arr2 = [3,5,6,7,8,13];
+	 	var arr = [];
+	 	
+	 	var lenMin = Math.min(arr1.length,arr2.length);
+	 	var lenMax = Math.max(arr1.length,arr2.length);
+	 	
+	 	for(var i = 0; i < lenMin; i++) {
+	 		arr[i] = arr1[i] + arr2[i];
+	 	}
+	 	
+	 	for(var i = lenMin; i < lenMax; i++) {
+	 		if(lenMax == arr1.length)
+	 			arr[i] = arr1[i];
+	 		else
+	 			arr[i] = arr2[i];
+	 	}
+	 	
+	 	document.getElementById("bai1").textContent= "[" + arr + "]";
+	 </script>
+</body>
+</html>
