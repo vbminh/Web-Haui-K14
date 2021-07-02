@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 2-Đề1</title>
+<link rel="stylesheet" href="Đề 1.css">
+<script type="text/javascript" src="Đề 1.js">
+function click() {
+	var x = document.getElementById("name").innerHTML;
+	var y = document.getElementById("pass").innerHTML;
+	var z = document.getElementById("phone").innerHTML;
+	
+	var sdt = /^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
+	
+	if(sdt.test(z) == false)
+		alert("Phải điền đầy đủ thông tin");
+	else
+		alert("Đăng kí thành công");
+}
+</script>
+</head>
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<td colspan="2"><h1>Đăng kí thông tin</h1></td>
+			</tr>
+			<tr>
+				<td>Tên đăng nhập</td>
+				<td><input type="text" id="name" name="name"></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" id="pass" name="password"></td>
+			</tr>
+			<tr>
+				<td><label for="gt">Giới tính</label></td>
+				<td><input type="radio" id="name" name="gt" value="nam">Nam &emsp;
+				<input type="radio" id="gt" name="gt" value="nữ">Nữ</td>
+			</tr>
+			<tr>
+				<td>Số điện thoại</td>
+				<td><input type="tel" id="phone"></td>
+			</tr>
+			<tr>
+				<td>Giới thiệu</td>
+				<td><input type="text" height="50px;"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+				<input type="button" onclick="click()" value="Đăng kí">
+				&emsp; &emsp;
+				<input type="reset" onclick="reset()" id="reset" value="Hủy bỏ"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
