@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 30px;
+	background-color: #efefef;
+}
+
+#title {
+	color: black;
+	font-size: 40px;
+	font-family: cursive;
+}
+
+#describe {
+	color: #c0c0c0;
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 10px;
+}
+
+.avt {
+	margin-top: 50px;
+	float: left;
+	width: 460px;
+}
+
+#tieude {
+	margin-top: 10px;
+	color: black;
+	font-family: cursive;
+	font-size: 22px;
+}
+
+#nd {
+	margin-top: 30px;
+	font-family: cursive;
+	font-size: 18px;
+	color: #c0c0c0;
+}
+
+#logo {
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+}
+
+#logo1 {
+	margin-top: 10px;
+	margin-left: 50px;
+	float: left;
+}
+
+#name1 {
+	margin-top: 10px;
+	margin-left: 630px;
+	color: black;
+	font-family: serif;
+	font-size: 22px;
+}
+
+#name {
+	margin-top: 50px;
+	margin-left: 630px;
+	color: black;
+	font-family: serif;
+	font-size: 22px;
+}
+
+#text {
+	margin-left: 630px;
+	margin-right: 100px;
+	font-family: cursive;
+	font-size: 18px;
+	color: #c0c0c0;
+}
+
+hr {
+	 border: dashed 1px red;
+	 margin-left: 510px;
+	 margin-right: 100px;
+}

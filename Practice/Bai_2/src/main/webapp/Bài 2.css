@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 50px 200px;
+}
+
+#name {
+	width: 400px;
+	height: 30px;
+	margin-top: 30px;
+}
+
+#email {
+	width: 400px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#sub {
+	width: 860px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+#describe {
+	width: 860px;
+	height: 200px;
+	margin-top: 10px;
+}
+
+#button {
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	float: left;
+	background-color: #7dcefd;
+	color: white;
+	border: none;
+}
+
+#button:hover {
+	background-color: #59a8d5;
+}
+
+p {
+	color: #c1c1c1;
+	margin-top: 10px;
+	margin-left: 600px;
+}
